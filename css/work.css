@@ -1,0 +1,132 @@
+.work {
+  padding: 100px 0px;
+}
+
+.work-title {
+  color: #191919;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  padding-bottom: 41px;
+}
+
+.work-subtitle {
+  color: #787878;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+}
+
+.portfolio-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio-grid__block {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  height: 300px;
+}
+
+.portfolio-grid__link-more {
+  padding: 50px 0px;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  width: 100%;
+}
+
+.portfolio-wrap {
+  position: relative;
+}
+
+.portfolio-wrap > picture > * {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.portfolio-wrap__link {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+
+.portfolio-wrap__link:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.portfolio-wrap__link:hover > .pe-7s-look {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  opacity: 1;
+}
+
+.portfolio-wrap__link > .pe-7s-look {
+  opacity: 0;
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.portfolio-wrap__link.active {
+  display: block;
+}
+
+.work {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding-bottom: 101px;
+}
+
+.portfolio-wrap__link:hover {
+  background-color: rgba(16, 201, 195, 0.85);
+}
+
+@media (min-width: 768px) {
+  .work-subtitle {
+    width: 37.482%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio-grid__block {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-grid__block {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+
+  .portfolio-grid__block:nth-last-child(-n+4) {
+    display: none;
+  }
+}

@@ -46,6 +46,10 @@ textarea {
   font-family: inherit;
 }
 
+textarea {
+  resize: none;
+}
+
 input::-ms-clear {
   display: none;
 }
